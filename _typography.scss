@@ -1,0 +1,33 @@
+.primary-heading {
+  font-size: 35px;
+  text-transform: uppercase;
+  font-weight: 700;
+  @include bgGradiantClip; // transition: all 0.2s ease-in-out;
+  margin-bottom: 80px;
+  transition: all 0.4s ease-in-out;
+
+  &:is(:hover, :active, :focus) {
+    transform: scale(1.1);
+    text-shadow: 5px 10px 20px rgba($color-dark, 0.2);
+  }
+}
+
+.secondary-heading {
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.ter-heading {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  color: #444;
+}
+.para {
+  font-size: 16px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

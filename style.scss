@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@import "./abstract/variables";
+@import "./abstract/mixins";
+
+@import "./base/animations";
+@import "./base/base";
+@import "./base/reset";
+@import "./base/typography";
+@import "./base/utility";
+
+@import "./layout/grid_system";
+@import "./layout/header";
+
+@import "./components/btn";
+@import "./components/forms";
+@import "./components/navbar";
+@import "./components/features-box";
+@import "./components/composition";
+@import "./components/tours-card";
+@import "./components/bg-video";
+@import "./components/story";
+@import "./components/book";
+
+@import "./pages/home";

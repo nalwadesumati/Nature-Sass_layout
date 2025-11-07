@@ -1,0 +1,52 @@
+.form .form-group {
+  margin-bottom: 20px;
+}
+.form .form-control {
+  display: block;
+  width: 90%;
+  padding: 15px 20px;
+  outline: none;
+  border: 0px;
+  //border-bottom: 3px solid transparent;
+}
+.form-control:is(:focus) {
+  border-bottom: 3px solid #55c57a;
+}
+.form-control:is(:focus):invalid {
+  border-bottom: 3px solid #ff7730;
+}
+.form ::placeholder {
+  color: #f7f7f7;
+}
+.form .form-label {
+  display: block;
+  transform: translateY(0);
+  padding: 7px 0 0 20px;
+  font-size: 14px;
+  transition: all 0.4s ease-in-out;
+  opacity: 1;
+}
+.form-control:placeholder-shown + .form-label {
+  transform: translateY(-45px);
+  opacity: 0;
+}
+.form-radio-control {
+  display: none;
+}
+.form-radio-label {
+  position: relative;
+
+  //padding-left: 40px;
+}
+
+.form-radio-btn {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border: 5px solid #28b485;
+  border-radius: 50%;
+  transform: translateY(10px);
+  margin-right: 5px;
+  //position: absolute;
+  // left: 0;
+}

@@ -1,0 +1,19 @@
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 25px;
+  border-radius: 3px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+.feature-box:is(:active, :hover, :focus) {
+  transform: scale(1.05) translateY(-15px);
+}
+.feature-box > i {
+  font-size: 60px;
+  @include bgGradiantClip;
+  //background-image: linear-gradient(to right, #7ed56f, #28b485);
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+}
